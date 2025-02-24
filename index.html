@@ -3,56 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my Website</title>
+    <title>i see you..</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Arial', sans-serif;
+            background-color: #c0e0f7; /* Light blue background */
+            color: #333;
             margin: 0;
-            padding: 20px;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 10px 0;
+            padding: 0;
             text-align: center;
         }
-        section {
-            margin-top: 20px;
-            background: #fff;
-            padding: 20px;
-            border-radius: 5px;
+
+        h1 {
+            background-color: #ff69b4; /* Hot pink header */
+            color: white;
+            padding: 15px;
+            margin: 0;
+            border-bottom: 5px solid #ff1493; /* Deeper pink border */
         }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            background: #e2e2e2;
-            margin: 5px 0;
+
+        .navbar {
+            background-color: #ff69b4; /* Hot pink navbar */
             padding: 10px;
-            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .content {
+            width: 70%;
+            background-color: white;
+            border: 3px dashed #ff69b4; /* Dashed border */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            position: relative;
+        }
+
+        .sidebar {
+            width: 25%;
+            background-color: #ffccff; /* Light pink sidebar */
+            border: 2px solid #ff69b4;
+            padding: 20px;
+            border-radius: 10px;
+            margin-left: 20px;
+        }
+
+        .message {
+            background-color: #e1f5fe; /* Light blue message bubble */
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px 0;
+            text-align: left;
+        }
+
+        footer {
+            background-color: #ff69b4; /* Footer color */
+            color: white;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>this is my page</h1>
-</header>
+    <h1>Welcome to my blog helloooo</h1>
+    
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About Me</a>
+        <a href="#">Friends</a>
+        <a href="#">Contact</a>
+    </div>
 
-<section>
-    <p>i will be sharing some cool stuff on here:</p>
-    <ul>
-        <li>my life</li>
-        <li>music</li>
-        <li> Sports</li>
-        <li>some CS stuff</li>
-    </ul>
-    <p>this website is under construction...</p>
-</section>
+    <div class="container">
+        <div class="content">
+            <h2>Latest Blog Post</h2>
+            <div class="message">hey! idk who has acces to this but have fun !</div>
+            <div class="message">24/02/2025 good day. have a lot of things on my mind!</div>
+            <div class="message">started listening to old french music. interesting🧐!</div>
+        </div>
+        
+        <div class="sidebar">
+            <h3>About Me</h3>
+            <p>Hi! i love a lot of things</p>
+            <h3>top things i m interested in</h3>
+            <ul>
+                <li>music</li>
+                <li>sports</li>
+                <li>coding</li>
+                <li>debating</li>
+                <li>politics</li>
+                <li>dancing</li>
+                <li>more......</li>
+            </ul>
+        </div>
+    </div>
 
-    <h1>STAY TUNED. hey marmar.</h1>
+    <footer>
+        <p>&copy; 2025 Adam Blog. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>

@@ -5,12 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>i see you..</title>
     <style>
-        body {
+        /* Global styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Make sure the body and html take full height */
+        html, body {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
             font-family: 'Arial', sans-serif;
             background-color: #c0e0f7; /* Light blue background */
             color: #333;
-            margin: 0;
-            padding: 0;
             text-align: center;
         }
 
@@ -25,7 +34,6 @@
         .navbar {
             background-color: #ff69b4; /* Hot pink navbar */
             padding: 10px;
-            margin-bottom: 20px;
         }
 
         .navbar a {
@@ -35,7 +43,9 @@
             font-weight: bold;
         }
 
+        /* Main content wrapper */
         .container {
+            flex: 1; /* Pushes the footer down */
             display: flex;
             justify-content: center;
             max-width: 1200px;
@@ -50,7 +60,6 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            position: relative;
         }
 
         .sidebar {
@@ -70,12 +79,12 @@
             text-align: left;
         }
 
+        /* Sticky footer */
         footer {
             background-color: #ff69b4; /* Footer color */
             color: white;
             padding: 10px;
-            position: absolute;
-            bottom: 0;
+            text-align: center;
             width: 100%;
         }
     </style>
@@ -94,7 +103,7 @@
     <div class="container">
         <div class="content">
             <h2>Latest Blog Post</h2>
-            <div class="message">hey! idk who has acces to this but have fun !</div>
+            <div class="message">hey! idk who has access to this but have fun!</div>
             <div class="message">24/02/2025 good day. have a lot of things on my mind!</div>
             <div class="message">started listening to old french music. interesting🧐!</div>
             <div class="message">i know how to not dope myself</div>
@@ -104,8 +113,8 @@
         
         <div class="sidebar">
             <h3>About Me</h3>
-            <p>Hi! i love a lot of things</p>
-            <h3>top things i m interested in</h3>
+            <p>Hi! I love a lot of things</p>
+            <h3>Top things I'm interested in</h3>
             <ul>
                 <li>music</li>
                 <li>sports</li>

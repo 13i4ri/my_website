@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .container {
+            
+            max-width: 50%;
+            
+        }
+        .cell{
+            width: 75px;
+            height: 75px;
+            border:black 1px solid;
+            text-align: center;
+            cursor: pointer;
+            background-color:bisque;
+        }
+        .cell:hover{
+            background-color: white;
+            
+        
+        }
+        .restartB{
+            display: block;
+            border-radius: 15px;
+            margin: 10px auto;
+            background: burlywood;
+        }
+    </style>
+</head>
+<body>
+      <div class="container ">
+        <div class="row">
+          <div class="cell col" onclick="playerMove(1)" id="c1"><h1 id="1"></h1></div>
+          <div class="cell col" onclick="playerMove(2)" id="c2"><h1 id="2"></h1></div>
+          <div class="cell col" onclick="playerMove(3)" id="c3"><h1 id="3"></h1></div>
+          <div class="cell col" onclick="playerMove(4)" id="c4"><h1 id="4"></h1></div>
+          <div class="cell col" onclick="playerMove(5)" id="c5"><h1 id="5"></h1></div>
+          <div class="cell col" onclick="playerMove(6)" id="c6"><h1 id="6"></h1></div>
+          <div class="cell col" onclick="playerMove(7)" id="c7"><h1 id="7"></h1></div>
+        </div>
+        <div class="row">
+          <div class="cell col" onclick="playerMove(8)" id="c8"><h1 id="8"></h1></div>
+          <div class="cell col" onclick="playerMove(9)" id="c9"><h1 id="9"></h1></div>
+          <div class="cell col" onclick="playerMove(10)" id="c10"><h1 id="10"></h1></div>
+          <div class="cell col" onclick="playerMove(11)" id="c11"><h1 id="11"></h1></div>
+          <div class="cell col" onclick="playerMove(12)" id="c12"><h1 id="12"></h1></div>
+          <div class="cell col" onclick="playerMove(13)" id="c13"><h1 id="13"></h1></div>
+          <div class="cell col" onclick="playerMove(14)" id="c14"><h1 id="14"></h1></div>
+        </div>
+        <div class="row">
+          <div class="cell col" onclick="playerMove(15)" id="c15"><h1 id="15"></h1></div>
+          <div class="cell col" onclick="playerMove(16)" id="c16"><h1 id="16"></h1></div>
+          <div class="cell col" onclick="playerMove(17)" id="c17"><h1 id="17"></h1></div>
+          <div class="cell col" onclick="playerMove(18)" id="c18"><h1 id="18"></h1></div>
+          <div class="cell col" onclick="playerMove(19)" id="c19"><h1 id="19"></h1></div>
+          <div class="cell col" onclick="playerMove(20)" id="c20"><h1 id="20"></h1></div>
+          <div class="cell col" onclick="playerMove(21)" id="c21"><h1 id="21"></h1></div>
+        </div>
+        <div class="row">
+            <div class="cell col" onclick="playerMove(22)" id="c22"><h1 id="22"></h1></div>
+            <div class="cell col" onclick="playerMove(23)" id="c23"><h1 id="23"></h1></div>
+            <div class="cell col" onclick="playerMove(24)" id="c24"><h1 id="24"></h1></div>
+            <div class="cell col" onclick="playerMove(25)" id="c25"><h1 id="25"></h1></div>
+          <div class="cell col" onclick="playerMove(26)" id="c26"><h1 id="26"></h1></div>
+          <div class="cell col" onclick="playerMove(27)" id="c27"><h1 id="27"></h1></div>
+          <div class="cell col" onclick="playerMove(28)" id="c28"><h1 id="28"></h1></div>
+          </div>
+          <div class="row">
+            <div class="cell col" onclick="playerMove(29)" id="c29"><h1 id="29"></h1></div>
+            <div class="cell col" onclick="playerMove(30)" id="c30"><h1 id="30"></h1></div>
+            <div class="cell col" onclick="playerMove(31)" id="c31"><h1 id="31"></h1></div>
+            <div class="cell col" onclick="playerMove(32)" id="c32"><h1 id="32"></h1></div>
+          <div class="cell col" onclick="playerMove(33)" id="c33"><h1 id="33"></h1></div>
+          <div class="cell col" onclick="playerMove(34)" id="c34"><h1 id="34"></h1></div>
+          <div class="cell col" onclick="playerMove(35)" id="c35"><h1 id="35"></h1></div>
+          </div>
+          <div class="row">
+            <div class="cell col" onclick="playerMove(36)" id="c36"><h1 id="36"></h1></div>
+            <div class="cell col" onclick="playerMove(37)" id="c37"><h1 id="37"></h1></div>
+            <div class="cell col" onclick="playerMove(38)" id="c38"><h1 id="38"></h1></div>
+            <div class="cell col" onclick="playerMove(39)" id="c39"><h1 id="39"></h1></div>
+          <div class="cell col" onclick="playerMove(40)" id="c40"><h1 id="40"></h1></div>
+          <div class="cell col" onclick="playerMove(41)" id="c41"><h1 id="41"></h1></div>
+          <div class="cell col" onclick="playerMove(42)" id="c42"><h1 id="42"></h1></div>
+            
+          </div>
+      </div>
+      <div id="winnerDIV" style="margin: 10px auto;" class="hidden">
+        <h1 id="winner"></h1>
+      </div>
+      <button class="restartB" id="restart" onclick="restart()">restart</button>
+      
+      <script src="app2.js"></script>
+</body>
+</html>

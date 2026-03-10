@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handball Shot Probability Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>~* Handball Shot Probability Simulator *~</h1>
+            <p class="subtitle">Click anywhere on the court to simulate a shot</p>
+            <a href="../index.html" class="back-link">&lt;&lt; back to home</a>
+        </header>
+        
+        <main class="simulator-layout">
+            <!-- Left side: Court Canvas -->
+            <div class="court-container">
+                <canvas id="handball-court" width="800" height="400"></canvas>
+            </div>
+            
+            <!-- Right side: Info Panel -->
+            <div class="info-panel">
+                <h2>Shot Analysis</h2>
+                
+                <div class="metric">
+                    <label>Shot Distance</label>
+                    <span id="shot-distance" class="value">— m</span>
+                </div>
+                
+                <div class="metric">
+                    <label>Shot Angle</label>
+                    <span id="shot-angle" class="value">— °</span>
+                </div>
+                
+                <div class="metric slider-metric">
+                    <label>Defender Distance</label>
+                    <div class="slider-container">
+                        <input type="range" id="defender-distance" min="0" max="5" step="0.1" value="2.5">
+                        <span id="defender-distance-value" class="slider-value">2.5 m</span>
+                    </div>
+                </div>
+                
+                <div class="metric probability-metric">
+                    <label>Estimated Goal Probability</label>
+                    <span id="goal-probability" class="value probability">— %</span>
+                </div>
+                
+                <div class="instructions">
+                    <h3>Instructions</h3>
+                    <ul>
+                        <li>Click anywhere on the court to place a shot</li>
+                        <li>Adjust the defender distance slider</li>
+                        <li>View the estimated scoring probability</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="probabilityModel.js"></script>
+    <script src="courtRenderer.js"></script>
+    <script src="simulator.js"></script>
+</body>
+</html>
